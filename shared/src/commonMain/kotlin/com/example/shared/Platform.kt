@@ -1,4 +1,4 @@
-package com.github.droibit.sample.shared
+package com.example.shared
 
 expect class Platform() {
     val platform: String

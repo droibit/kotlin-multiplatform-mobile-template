@@ -1,8 +1,8 @@
-package com.github.droibit.sample
+package com.example.android.app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.github.droibit.sample.shared.Greeting
+import com.example.shared.Greeting
 import android.widget.TextView
 
 fun greet(): String {

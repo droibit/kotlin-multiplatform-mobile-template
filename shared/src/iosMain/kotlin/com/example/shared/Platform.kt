@@ -1,4 +1,4 @@
-package com.github.droibit.sample.shared
+package com.example.shared
 
 import platform.UIKit.UIDevice
 

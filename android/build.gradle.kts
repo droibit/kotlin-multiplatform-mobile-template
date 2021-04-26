@@ -7,7 +7,7 @@ android {
     compileSdkVersion(BuildConfig.compileSdkVersion)
 
     defaultConfig {
-        applicationId = "com.github.droibt.sample"
+        applicationId = "com.example.android.app"
         minSdkVersion(BuildConfig.minSdkVersion)
         targetSdkVersion(BuildConfig.targetSdkVersion)
         versionCode = 1
