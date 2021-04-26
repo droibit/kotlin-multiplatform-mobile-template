@@ -1,6 +1,6 @@
 object Deps {
     object Plugins {
-        const val android = "com.android.tools.build:gradle:4.1.3"
+        const val android = "com.android.tools.build:gradle:7.0.0-alpha14"
         const val daggerHilt = "com.google.dagger:hilt-android-gradle-plugin:${Dagger.version}"
         const val navSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Androidx.Navigation.version}"
 
@@ -29,7 +29,7 @@ object Deps {
 
     object Androidx {
         const val core = "androidx.core:core-ktx:1.6.0-alpha01"
-        const val activity = "androidx.activity:activity-ktx:1.3.0-alpha06"
+        const val activity = "androidx.activity:activity-ktx:1.3.0-alpha07"
         const val fragment = "androidx.fragment:fragment-ktx:1.3.3"
         const val appCompat = "androidx.appcompat:appcompat:1.3.0-rc01"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.0.4"
@@ -51,7 +51,7 @@ object Deps {
     }
 
     object Dagger {
-        internal const val version = "2.33-beta"
+        internal const val version = "2.35"
         const val hilt = "com.google.dagger:hilt-android:$version"
         const val compiler = "com.google.dagger:hilt-android-compiler:$version"
     }
@@ -60,8 +60,8 @@ object Deps {
         const val junit = "junit:junit:4.13.1"
 
         object Kotlin {
-            const val common = "org.jetbrains.kotlin:test-common:${Plugins.Kotlin.version}"
-            const val annotationsCommon = "org.jetbrains.kotlin:test-annotations-common:${Plugins.Kotlin.version}"
+            const val common = "org.jetbrains.kotlin:kotlin-test-common:${Plugins.Kotlin.version}"
+            const val annotationsCommon = "org.jetbrains.kotlin:kotlin-test-annotations-common:${Plugins.Kotlin.version}"
         }
     }
 

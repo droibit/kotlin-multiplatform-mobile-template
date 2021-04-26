@@ -29,6 +29,16 @@ android {
         }
     }
 
+    // Workaround for https://youtrack.jetbrains.com/issue/KT-43944
+    configurations {
+        create("androidTestApi")
+        create("androidTestDebugApi")
+        create("androidTestReleaseApi")
+        create("testApi")
+        create("testDebugApi")
+        create("testReleaseApi")
+    }
+
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
 }
 
