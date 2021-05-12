@@ -1,6 +1,6 @@
 object Deps {
     object Plugins {
-        const val android = "com.android.tools.build:gradle:7.0.0-alpha14"
+        const val android = "com.android.tools.build:gradle:7.0.0-alpha15"
         const val daggerHilt = "com.google.dagger:hilt-android-gradle-plugin:${Dagger.version}"
         const val navSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Androidx.Navigation.version}"
 

@@ -4,26 +4,20 @@ plugins {
 }
 
 android {
-    compileSdkVersion(BuildConfig.compileSdkVersion)
+    compileSdk = BuildConfig.compileSdkVersion
 
     defaultConfig {
         applicationId = "com.example.android.app"
-        minSdkVersion(BuildConfig.minSdkVersion)
-        targetSdkVersion(BuildConfig.targetSdkVersion)
+        minSdk = BuildConfig.minSdkVersion
+        targetSdk = BuildConfig.targetSdkVersion
         versionCode = 1
         versionName = "1.0"
 
-        resConfigs("en", "ja")
+        resourceConfigurations + listOf("en", "ja")
         vectorDrawables.useSupportLibrary = true
     }
 
     buildFeatures {
-    }
-
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = false
-        }
     }
 
     buildTypes {
