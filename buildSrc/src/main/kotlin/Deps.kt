@@ -5,13 +5,8 @@ object Deps {
         const val navSafeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:${Androidx.Navigation.version}"
 
         object Kotlin {
-            internal const val version = "1.4.32"
+            internal const val version = "1.5.0"
             const val gradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
-        }
-
-        object Spotless {
-            const val id = "com.diffplug.spotless"
-            const val version = "5.10.1"
         }
     }
 
@@ -28,7 +23,7 @@ object Deps {
     }
 
     object Androidx {
-        const val core = "androidx.core:core-ktx:1.6.0-alpha01"
+        const val core = "androidx.core:core-ktx:1.6.0-alpha02"
         const val activity = "androidx.activity:activity-ktx:1.3.0-alpha07"
         const val fragment = "androidx.fragment:fragment-ktx:1.3.3"
         const val appCompat = "androidx.appcompat:appcompat:1.3.0-rc01"
@@ -51,25 +46,26 @@ object Deps {
     }
 
     object Dagger {
-        internal const val version = "2.35"
+        internal const val version = "2.35.1"
         const val hilt = "com.google.dagger:hilt-android:$version"
         const val compiler = "com.google.dagger:hilt-android-compiler:$version"
     }
 
     object Test {
-        const val junit = "junit:junit:4.13.1"
+        const val junit = "junit:junit:4.13.2"
 
         object Kotlin {
             const val common = "org.jetbrains.kotlin:kotlin-test-common:${Plugins.Kotlin.version}"
             const val annotationsCommon = "org.jetbrains.kotlin:kotlin-test-annotations-common:${Plugins.Kotlin.version}"
+            const val junit = "org.jetbrains.kotlin:kotlin-test-junit:${Plugins.Kotlin.version}"
         }
     }
 
     const val materialDesign = "com.google.android.material:material:1.4.0-alpha01"
-    const val napier = "com.github.aakira:napier:1.4.1"
     const val inject = "com.chrynan.inject:inject:0.8.0"
 
     object Version {
         const val ktlint = "0.40.0"
+        const val spotless = "5.10.1"
     }
 }

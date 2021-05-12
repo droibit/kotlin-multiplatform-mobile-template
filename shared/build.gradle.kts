@@ -45,7 +45,7 @@ kotlin {
     cocoapods {
         // Configure fields required by CocoaPods.
         summary = "Shared module for the app."
-        homepage = "https://github.com/droibit/kotlin-multiplatform-mobile-sample"
+        homepage = "https://github.com/droibit/kotlin-multiplatform-mobile-template"
         authors = "Shinya Kumagai"
         license = "Apache License, Version 2.0"
         frameworkName = "Shared"
@@ -66,13 +66,11 @@ kotlin {
                 implementation(Deps.Test.Kotlin.annotationsCommon)
             }
         }
-        val androidMain by getting {
-            dependencies {
-            }
-        }
+        val androidMain by getting
         val androidTest by getting {
             dependencies {
                 implementation(Deps.Test.junit)
+                implementation(Deps.Test.Kotlin.junit)
             }
         }
         val iosMain by getting
