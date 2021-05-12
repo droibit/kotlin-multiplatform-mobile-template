@@ -58,6 +58,8 @@ kotlin {
             dependencies {
                 implementation(Deps.Coroutines.core)
                 implementation(Deps.Stately.common)
+
+                implementation(Deps.Komol.core)
             }
         }
         val commonTest by getting {

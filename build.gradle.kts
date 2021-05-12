@@ -23,6 +23,7 @@ subprojects {
     repositories {
         google()
         mavenCentral()
+        maven(url = "https://repo.repsy.io/mvn/droibit/public")
     }
 
     apply(plugin = "com.diffplug.spotless")

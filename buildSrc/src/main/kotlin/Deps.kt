@@ -51,6 +51,12 @@ object Deps {
         const val compiler = "com.google.dagger:hilt-android-compiler:$version"
     }
 
+    object Komol {
+        private const val version = "0.0.3"
+        const val core = "com.github.droibit.komol:komol-core:$version"
+        const val timber = "com.github.droibit.komol:komol-timber:$version"
+    }
+
     object Test {
         const val junit = "junit:junit:4.13.2"
 

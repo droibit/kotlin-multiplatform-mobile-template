@@ -49,4 +49,7 @@ dependencies {
     implementation(Deps.Androidx.fragment)
 
     implementation(Deps.materialDesign)
+
+    implementation(Deps.Komol.core)
+    implementation(Deps.Komol.timber)
 }
